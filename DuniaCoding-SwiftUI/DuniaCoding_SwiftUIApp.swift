@@ -11,7 +11,7 @@ import SwiftUI
 struct DuniaCoding_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FeedView()
         }
     }
 }
