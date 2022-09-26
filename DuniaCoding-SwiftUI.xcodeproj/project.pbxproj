@@ -33,6 +33,7 @@
 		D562DAEB28DD81B700A665C9 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		D562DAEE28DD81CF00A665C9 /* ImageSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderView.swift; sourceTree = "<group>"; };
 		D562DAF028DD81E100A665C9 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		D562DAF428E1462500A665C9 /* Introduction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Introduction.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 				4839095F28CED6710074EF52 /* DuniaCoding_SwiftUIApp.swift */,
 				4839096328CED6740074EF52 /* Assets.xcassets */,
 				4839096528CED6740074EF52 /* Preview Content */,
+				D562DAF428E1462500A665C9 /* Introduction.playground */,
 			);
 			path = "DuniaCoding-SwiftUI";
 			sourceTree = "<group>";
