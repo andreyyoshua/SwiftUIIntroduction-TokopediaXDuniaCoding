@@ -47,8 +47,24 @@ internal struct PostMedia: Codable, Identifiable {
     }
 }
 
-internal struct PostComment: Codable {
+internal struct PostComment: Identifiable {
+    internal let id = UUID().uuidString
     internal let author: PostAuthor
     internal let comment: String
     internal let publishedAt: String
+}
+
+extension PostComment: Codable {
+    internal enum CodingKeys: String, CodingKey {
+        case author
+        case comment
+        case publishedAt
+    }
+    
+    internal init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        author = try container.decode(PostAuthor.self, forKey: .author)
+        comment = try container.decode(String.self, forKey: .comment)
+        publishedAt = try container.decode(String.self, forKey: .publishedAt)
+    }
 }

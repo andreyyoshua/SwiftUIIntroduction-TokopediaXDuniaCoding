@@ -51,7 +51,7 @@ struct PostView: View {
                 Text(postViewModel.post.text)
                     .font(.subheadline)
                 NavigationLink {
-                    CommentView()
+                    CommentView(comments: postViewModel.post.comments)
                 } label: {
                     Text("Lihat Semua Komentar")
                         .font(.subheadline.bold())
