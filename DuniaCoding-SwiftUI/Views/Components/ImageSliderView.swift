@@ -17,6 +17,10 @@ struct ImageSlider: View {
     var body: some View {
         TabView {
             ForEach(medias) { media in
+//                Image("")
+//                    .data(url: URL(string: media.mediaURL))
+//                    .resizable()
+//                    .scaledToFill()
                 AsyncImage(url: URL(string: media.mediaURL), content: { image in
                     return image.resizable()
                 }, placeholder: {

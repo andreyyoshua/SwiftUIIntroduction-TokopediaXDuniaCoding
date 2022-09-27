@@ -23,7 +23,7 @@ class FeedViewModel: ObservableObject {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
-                if let response = try? JSONDecoder().decode(Data.self, from: data) {
+                if let response = try? JSONDecoder().decode(DataApi.self, from: data) {
                     DispatchQueue.main.async {
                         self.posts = response.data.items
                     }

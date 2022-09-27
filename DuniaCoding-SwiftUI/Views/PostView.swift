@@ -13,6 +13,11 @@ struct PostView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack{
+//                Image("")
+//                    .data(url: URL(string: postViewModel.post.author.logoURL))
+//                    .resizable()
+//                    .clipShape(Circle())
+//                    .frame(width: 40, height: 40)
                 AsyncImage(url: URL(string: postViewModel.post.author.logoURL), content: { image in
                     image.resizable()
                 }, placeholder: {

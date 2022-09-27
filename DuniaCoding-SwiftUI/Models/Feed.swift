@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct Data: Codable {
+internal struct DataApi: Codable {
     internal let data: Feed
 }
 
