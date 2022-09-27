@@ -10,6 +10,10 @@ import SwiftUI
 class FeedViewModel: ObservableObject {
     @Published var posts: [Post] = []
     
+    init(posts: [Post] = []) {
+        self.posts = posts
+    }
+    
     func fetchData() {
         guard let url = URL(string: "https://andreyyoshua.com/files/duniacoding-feed.json") else {
             return

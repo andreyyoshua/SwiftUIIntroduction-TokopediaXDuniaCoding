@@ -45,6 +45,10 @@ internal struct PostMedia: Codable, Identifiable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         mediaURL = try container.decode(String.self, forKey: .mediaURL)
     }
+    
+    internal init(mediaURL: String) {
+        self.mediaURL = mediaURL
+    }
 }
 
 internal struct PostComment: Identifiable {

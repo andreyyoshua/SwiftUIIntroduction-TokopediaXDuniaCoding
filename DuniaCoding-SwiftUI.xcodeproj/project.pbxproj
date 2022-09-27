@@ -72,11 +72,11 @@
 		4839095E28CED6710074EF52 /* DuniaCoding-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				D562DAF528E1F8E800A665C9 /* Introduction */,
+				D562DADD28DD811300A665C9 /* Helpers */,
 				D562DAE028DD812400A665C9 /* Views */,
 				D562DADF28DD811F00A665C9 /* ViewModels */,
 				D562DADE28DD811900A665C9 /* Models */,
-				D562DADD28DD811300A665C9 /* Helpers */,
+				D562DAF528E1F8E800A665C9 /* Introduction */,
 				4839095F28CED6710074EF52 /* DuniaCoding_SwiftUIApp.swift */,
 				4839096328CED6740074EF52 /* Assets.xcassets */,
 				4839096528CED6740074EF52 /* Preview Content */,
