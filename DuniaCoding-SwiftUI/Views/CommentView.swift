@@ -27,7 +27,11 @@ struct SingleCommentView: View {
     
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: comment.author.logoURL))
+            AsyncImage(url: URL(string: comment.author.logoURL), content: { image in
+                image.resizable()
+            }, placeholder: {
+                Text("...")
+            })
                 .frame(width: 20, height: 20)
                 .clipShape(Circle())
             VStack(alignment: .leading) {
