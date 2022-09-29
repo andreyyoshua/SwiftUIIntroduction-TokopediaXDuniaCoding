@@ -1,6 +1,6 @@
 import UIKit
 
-// MARK: ERROR HANDLING
+// ERROR HANDLING
 enum PrinterError: Error {
     case outOfPaper
     case noToner
@@ -20,7 +20,6 @@ do {
 } catch {
     print(error)
 }
-// Prints "Job sent"
 
 do {
     let printerResponse = try send(job: 1440, toPrinter: "Gutenberg")
