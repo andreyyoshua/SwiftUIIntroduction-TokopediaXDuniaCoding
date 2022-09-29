@@ -34,14 +34,13 @@
 		D562DAEB28DD81B700A665C9 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		D562DAEE28DD81CF00A665C9 /* ImageSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderView.swift; sourceTree = "<group>"; };
 		D562DAF028DD81E100A665C9 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
-		D562DAF428E1462500A665C9 /* Error Handling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Error Handling.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D562DAF628E1F9F100A665C9 /* Objects, Classes, Structures & Enumarations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Objects, Classes, Structures & Enumarations.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D562DAF728E1FA3800A665C9 /* Protocol & Extension.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Protocol & Extension.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D562DAF828E1FA8E00A665C9 /* Function, Closure & Switch Case.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Function, Closure & Switch Case.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D562DAF928E1FAC900A665C9 /* Optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optional.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D562DAFA28E1FAEE00A665C9 /* Control Flow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Control Flow.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D562DAFB28E1FBAE00A665C9 /* Data Type.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Data Type.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		D5F1231C28E2FDA100158764 /* Image+Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Url.swift"; sourceTree = "<group>"; };
+		D562DAF428E1462500A665C9 /* 7. Error Handling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "7. Error Handling.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D562DAF628E1F9F100A665C9 /* 5. Objects, Classes, Structures & Enumarations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5. Objects, Classes, Structures & Enumarations.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D562DAF728E1FA3800A665C9 /* 6. Protocol & Extension.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "6. Protocol & Extension.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D562DAF828E1FA8E00A665C9 /* 4. Function, Closure & Switch Case.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4. Function, Closure & Switch Case.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D562DAF928E1FAC900A665C9 /* 3. Optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Optional.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D562DAFA28E1FAEE00A665C9 /* 2. Control Flow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "2. Control Flow.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D562DAFB28E1FBAE00A665C9 /* 1. Data Type.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1. Data Type.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,13 +141,13 @@
 		D562DAF528E1F8E800A665C9 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
-				D562DAF428E1462500A665C9 /* Error Handling.playground */,
-				D562DAF628E1F9F100A665C9 /* Objects, Classes, Structures & Enumarations.playground */,
-				D562DAF728E1FA3800A665C9 /* Protocol & Extension.playground */,
-				D562DAF828E1FA8E00A665C9 /* Function, Closure & Switch Case.playground */,
-				D562DAF928E1FAC900A665C9 /* Optional.playground */,
-				D562DAFA28E1FAEE00A665C9 /* Control Flow.playground */,
-				D562DAFB28E1FBAE00A665C9 /* Data Type.playground */,
+				D562DAFB28E1FBAE00A665C9 /* 1. Data Type.playground */,
+				D562DAFA28E1FAEE00A665C9 /* 2. Control Flow.playground */,
+				D562DAF928E1FAC900A665C9 /* 3. Optional.playground */,
+				D562DAF828E1FA8E00A665C9 /* 4. Function, Closure & Switch Case.playground */,
+				D562DAF628E1F9F100A665C9 /* 5. Objects, Classes, Structures & Enumarations.playground */,
+				D562DAF728E1FA3800A665C9 /* 6. Protocol & Extension.playground */,
+				D562DAF428E1462500A665C9 /* 7. Error Handling.playground */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
