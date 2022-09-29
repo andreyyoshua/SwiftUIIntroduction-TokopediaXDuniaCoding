@@ -1,6 +1,6 @@
 import UIKit
 
-// MARK: PROTOCOL AND EXTENSION
+// PROTOCOL
 protocol ExampleProtocol {
     var simpleDescription: String { get }
     mutating func adjust()
@@ -39,5 +39,4 @@ print(7.simpleDescription)
 
 let protocolValue: ExampleProtocol = a
 print(protocolValue.simpleDescription)
-// Prints "A very simple class.  Now 100% adjusted."
 // print(protocolValue.anotherProperty)  // Uncomment to see the error

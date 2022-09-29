@@ -1,6 +1,6 @@
 import UIKit
 
-// MARK: SWITCH CASE
+// SWITCH CASE
 let vegetable = "red pepper"
 switch vegetable {
 case "celery":
@@ -12,14 +12,12 @@ case let x where x.hasSuffix("pepper"):
 default:
     print("Everything tastes good in soup.")
 }
-// TODO: Try removing the default case. What error do you get?
 
-// MARK: FUNCTION AND CLOSURE
+// FUNCTION AND CLOSURE
 func greet(person: String, day: String) -> String {
     return "Hello \(person), today is \(day)."
 }
 greet(person: "Bob", day: "Tuesday")
-// TODO: Remove the day parameter. Add a parameter to include today’s lunch special in the greeting.
 
 func greet(_ person: String, on day: String) -> String {
     return "Hello \(person), today is \(day)."
@@ -44,9 +42,7 @@ func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
 }
 let statistics = calculateStatistics(scores: [5, 3, 100, 3, 9])
 print(statistics.sum)
-// Prints "120"
 print(statistics.2)
-// Prints "120"
 
 func returnFifteen() -> Int {
     var y = 10
@@ -85,11 +81,13 @@ numbers.map({ (number: Int) -> Int in
     let result = 3 * number
     return result
 })
-// TODO: Rewrite the closure to return zero for all odd numbers.
 
 let mappedNumbers = numbers.map({ number in 3 * number })
 print(mappedNumbers)
 
-let sortedNumbers = numbers.sorted { $0 > $1 }
+let sortedNumbers = numbers.sorted { firstIndex, nextIndex in
+    firstIndex > nextIndex
+}
+// let sortedNumbers = numbers.sorted { $0 > $1 }
 print(sortedNumbers)
 
