@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct FeedView: View {
-    var body: some View {
-        Text("Hello World")
-    }
-}
-
 @main
 struct DuniaCoding_SwiftUIApp: App {
     var body: some Scene {
