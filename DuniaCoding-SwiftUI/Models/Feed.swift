@@ -7,68 +7,100 @@
 
 import Foundation
 
-internal struct DataApi: Codable {
-    internal let data: Feed
+struct DataApi: Codable {
+    let data: Feed
 }
 
-internal struct Feed: Codable {
-    internal let items: [Post]
+struct Feed: Codable {
+    let items: [Post]
 }
 
-internal struct Post: Codable, Identifiable {
-    internal let id: String
-    internal let author: PostAuthor
-    internal let media: [PostMedia]
-    internal let title: String
-    internal let subTitle: String
-    internal let text: String
-    internal let publishedAt: String
-    internal var likeCount: Int
-    internal let comments: [PostComment]
+struct Post: Codable, Identifiable {
+    let id: String
+    let author: PostAuthor
+    let media: [PostMedia]
+    let title: String
+    let subTitle: String
+    let text: String
+    let publishedAt: String
+    var likeCount: Int
+    let comments: [PostComment]
 }
 
-internal struct PostAuthor: Codable {
-    internal let id: String
-    internal let name: String
-    internal let logoURL: String
+struct PostAuthor: Codable {
+    let id: String
+    let name: String
+    let logoURL: String
 }
 
-internal struct PostMedia: Codable, Identifiable {
-    internal let id = UUID().uuidString
-    internal let mediaURL: String
+struct PostMedia: Codable, Identifiable {
+    let id = UUID().uuidString
+    let mediaURL: String
     
-    internal enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case mediaURL
     }
     
-    internal init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         mediaURL = try container.decode(String.self, forKey: .mediaURL)
     }
     
-    internal init(mediaURL: String) {
+    init(mediaURL: String) {
         self.mediaURL = mediaURL
     }
 }
 
-internal struct PostComment: Identifiable {
-    internal let id = UUID().uuidString
-    internal let author: PostAuthor
-    internal let comment: String
-    internal let publishedAt: String
+struct PostComment: Identifiable {
+    let id = UUID().uuidString
+    let author: PostAuthor
+    let comment: String
+    let publishedAt: String
 }
 
 extension PostComment: Codable {
-    internal enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case author
         case comment
         case publishedAt
     }
     
-    internal init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         author = try container.decode(PostAuthor.self, forKey: .author)
         comment = try container.decode(String.self, forKey: .comment)
         publishedAt = try container.decode(String.self, forKey: .publishedAt)
     }
+}
+
+extension Post {
+    static var mockDataPosts = [
+        Post(
+            id: "1",
+            author: PostAuthor(
+                id: "author1",
+                name: "author name",
+                logoURL: ""
+            ),
+            media: [
+                PostMedia(mediaURL: "")
+            ],
+            title: "Test Title",
+            subTitle: "Test Subtitle",
+            text: "Test Caption",
+            publishedAt: "Test publishedAt",
+            likeCount: 999,
+            comments: [
+                PostComment(
+                    author: PostAuthor(
+                        id: "author1",
+                        name: "author name",
+                        logoURL: ""
+                    ),
+                    comment: "Test Comment",
+                    publishedAt: "Test publishedAt"
+                )
+            ]
+        )
+    ]
 }
