@@ -2,7 +2,7 @@
 //  Image+Url.swift
 //  DuniaCoding-SwiftUI
 //
-//  Created by gilang.bhagawadita on 27/09/22.
+//  Created by gilang.bhagawadita on 29/09/22.
 //
 
 import Foundation

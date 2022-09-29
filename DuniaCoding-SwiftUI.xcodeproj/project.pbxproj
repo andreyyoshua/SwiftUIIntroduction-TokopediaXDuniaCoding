@@ -18,7 +18,8 @@
 		D562DAEC28DD81B700A665C9 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562DAEB28DD81B700A665C9 /* PostView.swift */; };
 		D562DAEF28DD81CF00A665C9 /* ImageSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562DAEE28DD81CF00A665C9 /* ImageSliderView.swift */; };
 		D562DAF128DD81E100A665C9 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562DAF028DD81E100A665C9 /* CommentView.swift */; };
-		D5F1231D28E2FDA100158764 /* Image+Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F1231C28E2FDA100158764 /* Image+Url.swift */; };
+		D5F1231D28E2FDA100158764 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D5F3889B28E6011F00DD2477 /* Image+Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3889A28E6011F00DD2477 /* Image+Url.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		D562DAF928E1FAC900A665C9 /* 3. Optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Optional.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D562DAFA28E1FAEE00A665C9 /* 2. Control Flow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "2. Control Flow.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D562DAFB28E1FBAE00A665C9 /* 1. Data Type.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1. Data Type.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D5F3889A28E6011F00DD2477 /* Image+Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Url.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D562DAE128DD812F00A665C9 /* String+Date.swift */,
-				D5F1231C28E2FDA100158764 /* Image+Url.swift */,
+				D5F3889A28E6011F00DD2477 /* Image+Url.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -225,9 +227,10 @@
 				D562DAF128DD81E100A665C9 /* CommentView.swift in Sources */,
 				D562DAEC28DD81B700A665C9 /* PostView.swift in Sources */,
 				D562DAEF28DD81CF00A665C9 /* ImageSliderView.swift in Sources */,
-				D5F1231D28E2FDA100158764 /* Image+Url.swift in Sources */,
+				D5F1231D28E2FDA100158764 /* (null) in Sources */,
 				D562DAE828DD819100A665C9 /* PostViewModel.swift in Sources */,
 				D562DAE228DD812F00A665C9 /* String+Date.swift in Sources */,
+				D5F3889B28E6011F00DD2477 /* Image+Url.swift in Sources */,
 				D562DAE428DD816300A665C9 /* Feed.swift in Sources */,
 				D562DAE628DD817C00A665C9 /* FeedViewModel.swift in Sources */,
 				D562DAEA28DD81A300A665C9 /* FeedView.swift in Sources */,
