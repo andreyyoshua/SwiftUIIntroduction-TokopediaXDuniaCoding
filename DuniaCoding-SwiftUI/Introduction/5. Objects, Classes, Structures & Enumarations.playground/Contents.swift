@@ -6,11 +6,17 @@ class Shape {
     func simpleDescription() -> String {
         return "A shape with \(numberOfSides) sides."
     }
+    
+    func addSide() -> String {
+        numberOfSides += 1
+        return "Add 1 side"
+    }
 }
 
 var shape = Shape()
 shape.numberOfSides = 7
-var shapeDescription = shape.simpleDescription()
+shape.addSide()
+shape.simpleDescription()
 
 // CLASS WITH INITIALIZER
 class NamedShape {
@@ -25,6 +31,29 @@ class NamedShape {
         return "A shape with \(numberOfSides) sides."
     }
 }
+
+var circle = NamedShape(name: "Circle")
+
+// STRUCTURE
+struct ColoredShape {
+    var color: String = "Green"
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func simpleDescription() -> String {
+        return "A shape with \(color) color."
+    }
+    
+    mutating func changeColor() -> String {
+        color = "Red"
+        return "Color changed"
+    }
+}
+var greenShape = ColoredShape(name: "Circle")
+greenShape.changeColor()
 
 // CLASS IMPLEMENT CLASS
 class Square: NamedShape {
@@ -71,8 +100,6 @@ enum Rank: Int {
 }
 let ace = Rank.ace
 let aceRawValue = ace.rawValue
-print(ace)
-print(aceRawValue)
 
 // ENUMERATION WITH ASOCIATED VALUE
 enum ServerResponse {
@@ -89,5 +116,3 @@ case let .result(sunrise, sunset):
 case let .failure(message):
     print("Failure...  \(message)")
 }
-
-// EXPLAIN STRUCT VS CLASS
