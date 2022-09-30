@@ -24,6 +24,7 @@
 		D562DAF928E1FAC900A665C9 /* 3. Optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Optional.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D562DAFA28E1FAEE00A665C9 /* 2. Control Flow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "2. Control Flow.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D562DAFB28E1FBAE00A665C9 /* 1. Data Type.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1. Data Type.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D5F3889E28E698EB00DD2477 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				4839095F28CED6710074EF52 /* DuniaCoding_SwiftUIApp.swift */,
 				4839096328CED6740074EF52 /* Assets.xcassets */,
 				4839096528CED6740074EF52 /* Preview Content */,
+				D5F3889E28E698EB00DD2477 /* MyPlayground.playground */,
 			);
 			path = "DuniaCoding-SwiftUI";
 			sourceTree = "<group>";
