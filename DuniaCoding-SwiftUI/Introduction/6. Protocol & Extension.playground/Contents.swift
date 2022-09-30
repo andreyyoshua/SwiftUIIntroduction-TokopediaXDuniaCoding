@@ -42,3 +42,10 @@ print(7.simpleDescription)
 
 let protocolValue: ExampleProtocol = a
 print(protocolValue.simpleDescription)
+
+extension String {
+    func printDong() {
+        print("Sesuatu")
+    }
+}
+

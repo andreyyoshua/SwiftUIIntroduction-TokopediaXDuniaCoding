@@ -21,3 +21,9 @@ do {
     print(error)
 }
 
+let printerResponse = try? send(job: 1040, toPrinter: "Bi Sheng")
+print(printerResponse)
+
+
+
+
