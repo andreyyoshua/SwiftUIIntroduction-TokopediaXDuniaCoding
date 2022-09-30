@@ -39,7 +39,7 @@ func lessThanTen(number: Int) -> Bool {
 var numbers = [20, 19, 7, 12]
 hasAnyMatches(list: numbers, condition: lessThanTen)
 
-
+// MAP
 numbers.map { number -> Int in
     let result = 3 * number
     return result

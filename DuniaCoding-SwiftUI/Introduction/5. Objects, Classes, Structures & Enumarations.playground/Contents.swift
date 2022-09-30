@@ -31,10 +31,9 @@ class NamedShape {
         return "A shape with \(numberOfSides) sides."
     }
 }
-
 var circle = NamedShape(name: "Circle")
 
-// STRUCTURE
+// STRUCTURE WITH INITIALIZER
 struct ColoredShape {
     var color: String = "Green"
     var name: String
@@ -77,7 +76,7 @@ let test = Square(sideLength: 5.2, name: "my test square")
 test.area()
 test.simpleDescription()
 
-// ENUMERATION
+// ENUMERATION WITH RAW VALUE
 enum Rank: Int {
     case ace = 1
     case two, three, four, five, six, seven, eight, nine, ten

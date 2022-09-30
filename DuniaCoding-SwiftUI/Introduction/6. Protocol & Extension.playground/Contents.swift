@@ -6,6 +6,7 @@ protocol ExampleProtocol {
     mutating func adjust()
 }
 
+// CLASS IMPLEMENT PROTOCOL
 class SimpleClass: ExampleProtocol {
     var simpleDescription: String = "A very simple class."
     var anotherProperty: Int = 69105
@@ -17,6 +18,7 @@ var a = SimpleClass()
 a.adjust()
 let aDescription = a.simpleDescription
 
+// STRUCT IMPLEMENT PROTOCOL
 struct SimpleStructure: ExampleProtocol {
     var simpleDescription: String = "A simple structure"
     mutating func adjust() {
@@ -27,6 +29,7 @@ var b = SimpleStructure()
 b.adjust()
 let bDescription = b.simpleDescription
 
+// EXTENSION
 extension Int: ExampleProtocol {
     var simpleDescription: String {
         return "The number \(self)"
@@ -39,4 +42,3 @@ print(7.simpleDescription)
 
 let protocolValue: ExampleProtocol = a
 print(protocolValue.simpleDescription)
-// print(protocolValue.anotherProperty)  // Uncomment to see the error
