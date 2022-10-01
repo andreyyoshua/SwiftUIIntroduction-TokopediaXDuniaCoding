@@ -62,6 +62,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView(post: Post.mockDataPosts[0])
+        PostView(post: Post.mockDataPosts)
     }
 }
