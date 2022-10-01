@@ -12,3 +12,9 @@ struct PostView: View {
         Text("Hello World")
     }
 }
+
+struct PostView_Previews: PreviewProvider {
+    static var previews: some View {
+       PostView()
+    }
+}

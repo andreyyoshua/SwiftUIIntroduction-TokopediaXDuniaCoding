@@ -74,7 +74,7 @@ extension PostComment: Codable {
 }
 
 extension Post {
-    static var mockDataPosts = [
+    static var mockDataPosts =
         Post(
             id: "1",
             author: PostAuthor(
@@ -102,5 +102,4 @@ extension Post {
                 )
             ]
         )
-    ]
 }
