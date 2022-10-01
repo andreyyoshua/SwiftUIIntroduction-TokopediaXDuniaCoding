@@ -8,7 +8,7 @@
 import Foundation
 
 extension String {
-    func formattedDateFeedX(currentDate: Date = Date(), isCommentPage: Bool = false) -> String {
+    func formattedDateFeedX(currentDate: Date = Date()) -> String {
         let dateFormatter = DateFormatter()
         let timeStampFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
         dateFormatter.dateFormat = timeStampFormat
@@ -20,7 +20,6 @@ extension String {
         let days = date.daysTo(now)
         let hours = date.hoursTo(now)
         let minutes = date.minutesTo(now)
-        let suffixText = isCommentPage ? "" : "yang lalu"
 
         if years >= 1 {
             dateFormatter.dateFormat = "MMM yyyy"
@@ -29,11 +28,11 @@ extension String {
             dateFormatter.dateFormat = "d MMM"
             return dateFormatter.string(from: date)
         } else if days >= 1 {
-            return "\(days) hari \(suffixText)"
+            return "\(days) hari"
         } else if hours >= 1 {
-            return "\(hours) jam \(suffixText)"
+            return "\(hours) jam"
         } else if minutes >= 1 {
-            return "\(minutes) menit \(suffixText)"
+            return "\(minutes) menit"
         } else {
             return "Beberapa detik yang lalu"
         }
